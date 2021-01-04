@@ -66,8 +66,11 @@ repeat {
             print("Dame un array de numeros separados por coma")
             numbers = readLine()!.components(separatedBy: ",").map({Int($0)!})
             print("Result: \(ExerciseFive().run(numbers: [1, 2, 3, 4, 5]))")
+        case 6:
+            print("Adios :)")
         default:
-            print("Adios")
+            
+            print("Opción inválida")
         }
 } while exercise != 6;
 

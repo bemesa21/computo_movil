@@ -46,15 +46,16 @@ repeat {
             b = Int(readLine()!)!
             print("Resultado: \(ExerciseTwo().run(a: a, b: b))")
         case 3:
+            print("Dame un numero telefónico:")
             phoneNumber = readLine()!.trimmingCharacters(in: .whitespacesAndNewlines)
             print(phoneNumber)
-            if ExerciseThree().run(phoneNumber: phoneNumber){
+            if ExerciseThree().run(phoneNumber: "(52)-55-5436-9493"){
                 print("Número válido")
             }else{
                 print("Número inválido")
             }
         case 4:
-            print("Dame los ingredientes separados por coma y un espacio")
+            print("Dame los ingredientes separados por coma")
             ingredients = readLine()!
             recipes = ExerciseFour().run(ingredients: ingredients.components(separatedBy: ","))
             if recipes.isEmpty{

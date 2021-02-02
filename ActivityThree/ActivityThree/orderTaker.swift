@@ -43,8 +43,13 @@ class OrderTaker {
                     self.order.addTacosAndExtras(number: tacosNumber, type: tacosTypes[tacoType]!, extras: [])
                 }
             }
-            print("Desea algo más?\n")
-            isDone = Bool (readLine() ?? "true")!
+            print("Desea algo más?\n0)No\n1)Si\n")
+            if let addToOrder = readLine(){
+                if Int(addToOrder)! == 0 {
+                    isDone = false
+                }
+                
+            }
         }while(isDone)
     }
     

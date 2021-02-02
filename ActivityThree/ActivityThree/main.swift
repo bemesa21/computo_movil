@@ -9,7 +9,7 @@ import Foundation
 
 class Client {
     static func start() {
-        print(Facade.serve())
+        Facade.serve()
     }
 }
 
